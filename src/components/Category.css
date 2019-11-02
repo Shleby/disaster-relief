@@ -1,0 +1,19 @@
+#category.cover {
+    height: 100px;
+    margin: 25px;
+    background: rgb(203, 223, 211);
+    position: relative;
+}
+#category .content h2 {
+    float: left;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+#category .image {
+    position: absolute;
+    height: 80px;
+    top: 10px;
+    left: 10px;
+    background: grey;
+    width: 80px;
+}
