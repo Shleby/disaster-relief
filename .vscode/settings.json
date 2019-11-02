@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/bfd5d8d5-e493-4165-bc6b-fa8471d77c42/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/cers",
+    "appService.deploySubpath": ""
+}

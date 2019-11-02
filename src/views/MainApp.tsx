@@ -1,18 +1,18 @@
 import * as React from "react";
 
-class MainApp extends React.Component<any, any> {
-  constructor(props: any) {
-    super(props);
-    this.state = {
-      samFletcher: "theboi"
-    };
-  }
+import "./MainApp.css";
+import { BrowserRouter as Router } from "react-router-dom";
+import HomePage from "./Home/HomePage";
 
+class MainApp extends React.Component<any, any> {
   render() {
     return (
-      <div>
-        <h1>Welcome, to main app</h1>
-      </div>
+      <Router>
+        <div>
+          <h1 className="title">Centralized Emergency Relief System</h1>
+          <HomePage />
+        </div>
+      </Router>
     );
   }
 }

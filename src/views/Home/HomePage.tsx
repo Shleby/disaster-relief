@@ -1,19 +1,22 @@
 import * as React from "react";
 
 import "./HomePage.css";
+import disasters from "../../disasters.json";
+import Category from "../../components/Category";
 
 class MainApp extends React.Component<any, any> {
-  constructor(props: any) {
-    super(props);
-    this.state = {
-      samFletcher: "theboi"
-    };
-  }
-
   render() {
     return (
-      <div className="home">
-        <h1>Home Page</h1>
+      <div className="cover">
+        <div className="container">
+          {disasters.map(function(i: any) {
+            return (
+              <div>
+                <Category name={i.name} />
+              </div>
+            );
+          })}
+        </div>
       </div>
     );
   }

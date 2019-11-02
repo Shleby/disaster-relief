@@ -1,0 +1,15 @@
+.cover {
+  text-align: center;
+  position: relative;
+}
+
+.container {
+  width: 95%;
+  max-width: 700px;
+  height: auto;
+  display: inline-block;
+}
+
+.h1 {
+  color: white;
+}
