@@ -1,5 +1,7 @@
 import * as React from "react";
 
+import "./HomePage.css";
+
 class MainApp extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
@@ -10,8 +12,8 @@ class MainApp extends React.Component<any, any> {
 
   render() {
     return (
-      <div>
-        <h1>Home PAge</h1>
+      <div className="home">
+        <h1 className="h1">Home Page</h1>
       </div>
     );
   }
