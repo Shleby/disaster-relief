@@ -2,7 +2,6 @@ import * as React from "react";
 
 import "./Category.css";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 class Category extends React.Component<any, any> {
   render() {
@@ -18,7 +17,6 @@ class Category extends React.Component<any, any> {
           <h2>{this.props.name}</h2>
           <p>
             Provide relief for the {this.props.name}.
-            <ExpandMoreIcon className="arrowDown" />
           </p>
         </div>
         <ArrowForwardIosIcon className="arrowRight" />
