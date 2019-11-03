@@ -1,0 +1,54 @@
+.root {
+  height: 708px;
+}
+
+.label {
+  padding-left: 100px;
+}
+.image-dont {
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.paper {
+  margin: "";
+  display: flex;
+  flex-direction: column;
+  align-items: "center";
+}
+
+.logo {
+  margin-top: 20px;
+  margin-left: 250px;
+
+  max-height: 100px;
+  min-height: 100px;
+  max-width: 100px;
+  min-width: 100px;
+}
+
+.form {
+  width: 100%;
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: darkslategrey;
+}
+
+.submit {
+  margin: 60px;
+  color: darkslategrey;
+  background-color: darkslategray;
+}
+
+.label {
+  color: darkslategray;
+  font-weight: bold;
+  font-size: 27px;
+  margin-left: 130px;
+}
+.label::shadow {
+  color: whitesmoke;
+}

@@ -1,7 +1,5 @@
 import * as React from "react";
 
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-
 import "./Cards.css";
 class Cards extends React.Component<any, any> {
   constructor(props: any) {
