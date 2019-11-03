@@ -18,6 +18,9 @@ body {
     font-family: Avenir;
     font-size: 4em;
 }
+a {
+    text-decoration-line: none;
+}
 .subtitle {
     text-align: left;
     margin: 0;

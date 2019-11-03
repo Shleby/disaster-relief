@@ -3,6 +3,7 @@ import * as React from "react";
 import "./HomePage.css";
 import disasters from "../../disasters.json";
 import Category from "../../components/Category";
+import { Link } from 'react-router-dom';
 
 class MainApp extends React.Component<any, any> {
   constructor(props: any) {
@@ -24,7 +25,13 @@ class MainApp extends React.Component<any, any> {
           {disasters.map(function(i: any) {
             return (
               <div>
+<<<<<<< HEAD
                 <Category name={i.name} type={i.type} />
+=======
+                <Link to='/labels'>
+                  <Category name={i.name} type={i.type}/>
+                </Link>
+>>>>>>> origin/sam
               </div>
             );
           })}

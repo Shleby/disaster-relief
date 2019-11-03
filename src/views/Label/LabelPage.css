@@ -1,0 +1,59 @@
+#label.cover {
+    color: white;
+    text-align: center;
+    width: 76%;
+    margin-left: 12%;
+}
+#label .item {
+    color: white;
+    position: relative;
+    border-radius: 8px;
+    height: 150px;
+    margin: 25px;
+    width: 500px;
+    display: inline-block;
+}
+#label .vItem {
+    background-color: #FF6C6C;
+}
+#label .oItem {
+    background-color: #A064EC ;
+    margin-bottom: 0;
+}
+#label .item:nth-child(3) p {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    margin-top: 0;
+}
+#label .item:nth-child(3) .icon {
+    position: absolute;
+    top: -45px;
+    left: 158px;
+    margin-top: 0;
+    width: 10px;
+}
+
+#label .item .icon {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 25px;
+    top: 25px;
+}
+#label .item h1 {
+    position: absolute;
+    text-align: left;
+    top: 10px;
+    left: 150px;
+}
+#label .item p {
+    position: absolute;
+    text-align: left;
+    top: 58px;
+    left: 150px;
+}
+#label .guest {
+    text-align: left;
+    margin-top: -20px;
+}
