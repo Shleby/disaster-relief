@@ -29,8 +29,6 @@ class VolunteerPage extends React.Component<any, any> {
       });
   }
   render() {
-    const secondColumnStart = Math.floor(this.state.organizations.length / 2);
-
     return (
       <div>
         <div className="container">
@@ -44,33 +42,18 @@ class VolunteerPage extends React.Component<any, any> {
               marginLeft: "-375px"
             }}
           >
-            {this.state.organizations
-              .slice(0, secondColumnStart)
-              .map(function(i: any) {
-                return (
-                  <div className="cards" style={{ marginLeft: "500px" }}>
-                    <Cards
-                      name={i.name}
-                      summary={i.summary}
-                      website={i.website}
-                    />
-                  </div>
-                );
-              })}
-            {this.state.organizations
-              .slice(secondColumnStart)
-              .map(function(i: any) {
-                return (
-                  <div className="cards" style={{ marginLeft: "500px" }}>
-                    <Cards
-                      name={i.name}
-                      summary={i.summary}
-                      website={i.website}
-                      eventType={i.event}
-                    />
-                  </div>
-                );
-              })}
+            {this.state.organizations.map(function(i: any) {
+              return (
+                <div className="cards" style={{ marginLeft: "500px" }}>
+                  <Cards
+                    name={i.name}
+                    summary={i.summary}
+                    website={i.website}
+                    eventType={i.event}
+                  />
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

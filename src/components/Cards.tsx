@@ -1,7 +1,6 @@
 import * as React from "react";
 
 import "./Category.css";
-import { Card, Link } from "@material-ui/core";
 class Cards extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
@@ -14,20 +13,18 @@ class Cards extends React.Component<any, any> {
   render() {
     return (
       <div>
-        <Card>
-          <h1 style={{ textAlign: "center", color: "darkred" }}>
-            {this.props.eventType}
-          </h1>
-          <a href={this.state.website} style={{ fontSize: 12 }}>
-            {this.state.website}
-            {this.state.name}
-          </a>
-          <details className="details">
-            <summary style={{ textAlign: "center" }}>
-              {this.props.summary}
-            </summary>
-          </details>
-        </Card>
+        <h1 style={{ textAlign: "center", color: "darkred" }}>
+          {this.props.eventType}
+        </h1>
+        <a href={this.state.website}>
+          {this.state.website}
+          {this.state.name}
+        </a>
+        <details className="details">
+          <summary className="summary" style={{ textAlign: "center" }}>
+            {this.props.summary}
+          </summary>
+        </details>
       </div>
     );
   }
