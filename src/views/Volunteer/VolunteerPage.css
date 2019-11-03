@@ -1,20 +1,30 @@
 .volHead {
-  margin-left: 120px;
+  margin-left: 200px;
   color: white;
   font-size: 40px;
+  width: 100%;
+  color: #fcfcfc;
+  font-weight: normal;
+  margin-top: 20px;
 }
 .volSubtitle {
-  margin-left: 120px;
+  margin-left: 200px;
   color: white;
   font-size: 18px;
   margin-top: -25px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+}
+li {
+  color: black;
 }
 .cards {
+  position: relative;
   width: 500px;
-  border-style: outset;
+  padding-bottom: 20px;
+  border-radius: 8px;
   background-color: white;
   justify-content: left;
+  overflow: hidden;
 }
 .navbar {
     background: white;
@@ -29,4 +39,7 @@
     display: inline-block;
     padding: 15px 25px;
     cursor: pointer;
+}
+.vCover {
+  margin-bottom: 50px;
 }

@@ -1,7 +1,9 @@
 import * as React from "react";
 import "./VolunteerPage.css";
 import axios from "axios";
-import Cards from "../../components/Cards";
+import MeetUps from "../../components/MeetUps";
+import { Switch, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 class VolunteerPage extends React.Component<any, any> {
   constructor(props: any) {
@@ -11,6 +13,9 @@ class VolunteerPage extends React.Component<any, any> {
       name: "",
       type: "",
       date: "",
+      person: "",
+      spots: "",
+      contact: "",
       location: ""
     };
   }
@@ -30,55 +35,19 @@ class VolunteerPage extends React.Component<any, any> {
       });
   }
   render() {
-    const secondColumnStart = Math.floor(this.state.organizations.length / 2);
-
     return (
-      <div>
+      <div className="vCover">
         <ul className="navbar">
-            <li>Meetups</li>
+            <Link to="/volunteer/meetups"><li>Meetups</li></Link>
             <li>Missing Persons</li>
             <li>Donate</li>
         </ul>
         <div className="container">
           <h1 className="volHead"><strong>California Wildfires</strong></h1>
           <p className="volSubtitle">Volunteer with an organization or relief center.</p>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(2, 650px)",
-              gridGap: 50,
-              marginRight: 700,
-              marginLeft: "-375px"
-            }}
-          >
-            {this.state.organizations
-              .slice(0, secondColumnStart)
-              .map(function(i: any) {
-                return (
-                  <div className="cards" style={{ marginLeft: "500px" }}>
-                    <Cards
-                      name={i.name}
-                      summary={i.summary}
-                      website={i.website}
-                    />
-                  </div>
-                );
-              })}
-            {this.state.organizations
-              .slice(secondColumnStart)
-              .map(function(i: any) {
-                return (
-                  <div className="cards" style={{ marginLeft: "500px" }}>
-                    <Cards
-                      name={i.name}
-                      summary={i.summary}
-                      website={i.website}
-                      eventType={i.event}
-                    />
-                  </div>
-                );
-              })}
-          </div>
+          <Switch>
+            <Route exact path="/volunteer/meetups" component={MeetUps} />
+          </Switch>
         </div>
       </div>
     );
