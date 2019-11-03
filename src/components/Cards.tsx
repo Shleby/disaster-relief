@@ -16,6 +16,7 @@ class Cards extends React.Component<any, any> {
         <h1 style={{ textAlign: "center", color: "darkred" }}>
           {this.props.eventType}
         </h1>
+        <hr />
         <a href={this.state.website}>
           {this.state.website}
           {this.state.name}

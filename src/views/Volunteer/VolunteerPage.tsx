@@ -36,10 +36,10 @@ class VolunteerPage extends React.Component<any, any> {
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(2, 650px)",
-              gridGap: 50,
+              gridTemplateColumns: "repeat(2, 550px)",
+              gridGap: 20,
               marginRight: 700,
-              marginLeft: "-375px"
+              marginLeft: "-300px"
             }}
           >
             {this.state.organizations.map(function(i: any) {

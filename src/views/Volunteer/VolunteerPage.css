@@ -1,8 +1,15 @@
 .volHead {
-  margin-left: 30%;
-  color: white;
-  font-size: 40px;
+  margin-left: 20%;
+  font-size: 60px;
   font-weight: lighter;
+  width: 100%;
+  color: #fcfcfc;
+  font-weight: normal;
+  font-family: "Ultra", sans-serif;
+  font-size: 65px;
+  text-transform: uppercase;
+  margin-top: -5px;
+  text-shadow: 0 2px white, 0 3px darkred;
 }
 .cards {
   width: 500px;
