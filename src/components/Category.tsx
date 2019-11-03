@@ -1,10 +1,8 @@
 import * as React from "react";
 
 import "./Category.css";
-// import disasters from "../disasters.json";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-// import { url } from "inspector";
 
 class Category extends React.Component<any, any> {
   render() {

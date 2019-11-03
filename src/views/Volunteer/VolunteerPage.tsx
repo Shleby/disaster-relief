@@ -1,11 +1,12 @@
 import * as React from "react";
 import "./VolunteerPage.css";
-
+import axios from "axios";
+import Cards from "../../components/Cards";
 class VolunteerPage extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
     this.state = {
-      disasters: [],
+      organizations: [],
       name: "",
       type: "",
       date: "",
@@ -13,15 +14,64 @@ class VolunteerPage extends React.Component<any, any> {
     };
   }
 
-  // componentDidMount() {
-  //   this.setState({ disasters: this.props.disastersDB });
-  //   this.setState({ name: this.state.disasters.find() });
-  // }
+  componentDidMount() {
+    axios
+      .get(
+        "https://webhooks.mongodb-stitch.com/api/client/v2.0/app/cersstitch-xxofl/service/getOrganizations/incoming_webhook/getOrganizations",
+        {}
+      )
+      .then((res: any) => {
+        console.log("Success", res);
+        this.setState({ organizations: res.data });
+      })
+      .catch((res: Error) => {
+        console.log("INVALID RESPONSE", res);
+      });
+  }
   render() {
+    const secondColumnStart = Math.floor(this.state.organizations.length / 2);
+
     return (
-      <div id="volunteer">
+      <div>
         <div className="container">
           <h1 className="volHead">California Fires</h1>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(2, 650px)",
+              gridGap: 50,
+              marginRight: 700,
+              marginLeft: "-375px"
+            }}
+          >
+            {this.state.organizations
+              .slice(0, secondColumnStart)
+              .map(function(i: any) {
+                return (
+                  <div className="cards" style={{ marginLeft: "500px" }}>
+                    <Cards
+                      name={i.name}
+                      summary={i.summary}
+                      website={i.website}
+                    />
+                  </div>
+                );
+              })}
+            {this.state.organizations
+              .slice(secondColumnStart)
+              .map(function(i: any) {
+                return (
+                  <div className="cards" style={{ marginLeft: "500px" }}>
+                    <Cards
+                      name={i.name}
+                      summary={i.summary}
+                      website={i.website}
+                      eventType={i.event}
+                    />
+                  </div>
+                );
+              })}
+          </div>
         </div>
       </div>
     );

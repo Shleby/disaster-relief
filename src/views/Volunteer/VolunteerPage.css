@@ -4,3 +4,9 @@
   font-size: 40px;
   font-weight: lighter;
 }
+.cards {
+  width: 500px;
+  border-style: outset;
+  background-color: white;
+  justify-content: left;
+}
