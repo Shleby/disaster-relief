@@ -6,7 +6,8 @@ HackTX 2019
 
 1. Download Azure Cli
    https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest
-2. run command az webapp up -n cers
+2. run npm build
+3. run command az webapp up -n cers -l centralus
 
 ## Contributors
 
