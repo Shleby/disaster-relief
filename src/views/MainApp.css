@@ -1,3 +1,29 @@
+@font-face {
+    font-family: "Avenir";
+    src: url("../AvenirLTStd-Black.otf") format("otf");
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
+
+body {
+    background: #6DA7C7;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
 .title {
-    text-align: center;
+    text-align: left;
+    margin: 0;
+    margin-left: 10%;
+    display: inline-block;
+    color: white;
+    font-family: Avenir;
+    font-size: 4em;
+}
+.subtitle {
+    text-align: left;
+    margin: 0;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    color: white;
+    font-size: 1em;
 }
