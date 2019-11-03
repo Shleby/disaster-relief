@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Avenir";
+  src: url("../../AvenirLTStd-Black.otf") format("otf");
+  }
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
+
+body {
+  background: #6DA7C7;
+  font-family: 'Roboto';
+  font-weight: 400;
+}
 .cover {
   text-align: center;
   position: relative;

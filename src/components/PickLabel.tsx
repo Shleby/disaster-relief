@@ -1,9 +1,6 @@
 import * as React from "react";
 
-import "./Category.css";
-import disasters from "../disasters.json";
-import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import "./PickLabel.css";
 import { url } from "inspector";
 
 class MainApp extends React.Component<any, any> {
@@ -15,9 +12,8 @@ class MainApp extends React.Component<any, any> {
         </div>
         <div className="content">
           <h2>{this.props.name}</h2>
-          <p>Provide relief for the {this.props.name}. <u>See more</u><ExpandMoreIcon className="arrowDown" /></p>
+          <p>Provide relief for the {this.props.name}. <u>See more</u></p>
         </div>
-        <ArrowForwardIosIcon className="arrowRight"/>
       </div>
     );
   }

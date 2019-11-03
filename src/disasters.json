@@ -1,12 +1,18 @@
 [
   {
-    "name": "Earthquakes",
-    "description": "Earthquakes are caused from faults disturbing the ground.",
-    "img": "earthquake.png"
+    "name": "California Wildfires",
+    "type": "fire"
   },
   {
-    "name": "Tornados",
-    "description": "Tornados are common in the South caused by strong winds.",
-    "img": "tornado.png"
+    "name": "Ogasawara Earthquake",
+    "type": "earthquake"
+  },
+  {
+    "name": "Typhoon Hagibis",
+    "type": "typhoon"
+  },
+  {
+    "name": "Moore Tornado",
+    "type": "tornado"
   }
 ]

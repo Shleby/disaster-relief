@@ -9,7 +9,8 @@ class MainApp extends React.Component<any, any> {
     return (
       <Router>
         <div>
-          <h1 className="title">Centralized Emergency Relief System</h1>
+          <h1 className="title">cers</h1>
+          <p className="subtitle">Centralized Emergency Releif System</p>
           <HomePage />
         </div>
       </Router>
