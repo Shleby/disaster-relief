@@ -6,6 +6,7 @@ import HomePage from "./Home/HomePage";
 import LabelPage from "./Label/LabelPage";
 import OrganizationPage from "./Organization/OrganizationPage";
 import VolunteerPage from "./Volunteer/VolunteerPage";
+import signin from "../components/signin";
 import { Link } from "react-router-dom";
 
 class MainApp extends React.Component<any, any> {
@@ -50,6 +51,7 @@ class MainApp extends React.Component<any, any> {
           <Route path="/labels">
             <LabelPage disastersDB={this.state.disasters} />
           </Route>
+          <Route path="/signin" component={signin} />
           <Route path="/volunteer" component={VolunteerPage} />
           <Route path="/organization" component={OrganizationPage} />
         </Switch>
