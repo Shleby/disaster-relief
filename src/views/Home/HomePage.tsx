@@ -5,7 +5,7 @@ import "./HomePage.css";
 import Category from "../../components/Category";
 import { Link } from "react-router-dom";
 
-class MainApp extends React.Component<any, any> {
+class HomePage extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
     this.state = {
@@ -16,7 +16,6 @@ class MainApp extends React.Component<any, any> {
       location: ""
     };
   }
-
   componentDidMount() {
     axios
       .get(
@@ -52,4 +51,4 @@ class MainApp extends React.Component<any, any> {
   }
 }
 
-export default MainApp;
+export default HomePage;

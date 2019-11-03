@@ -6,7 +6,17 @@ import PeopleOutlineIcon from "@material-ui/icons/PeopleOutline";
 // import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import { Link } from "react-router-dom";
 
-class MainApp extends React.Component<any, any> {
+class LabelPage extends React.Component<any, any> {
+  constructor(props: any) {
+    super(props);
+    this.state = {
+      disasters: [],
+      name: "",
+      type: "",
+      date: "",
+      location: ""
+    };
+  }
   render() {
     return (
       <div id="label" className="cover">
@@ -43,4 +53,4 @@ class MainApp extends React.Component<any, any> {
   }
 }
 
-export default MainApp;
+export default LabelPage;

@@ -6,7 +6,7 @@ import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 // import { url } from "inspector";
 
-class MainApp extends React.Component<any, any> {
+class Category extends React.Component<any, any> {
   render() {
     return (
       <div id="category" className="cover">
@@ -29,4 +29,4 @@ class MainApp extends React.Component<any, any> {
   }
 }
 
-export default MainApp;
+export default Category;

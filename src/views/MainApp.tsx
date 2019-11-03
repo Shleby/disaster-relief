@@ -1,5 +1,5 @@
 import * as React from "react";
-
+import axios from "axios";
 import "./MainApp.css";
 import { Switch, Route } from "react-router-dom";
 import HomePage from "./Home/HomePage";
@@ -20,6 +20,20 @@ class MainApp extends React.Component<any, any> {
     };
   }
 
+  componentDidMount() {
+    axios
+      .get(
+        "https://webhooks.mongodb-stitch.com/api/client/v2.0/app/cersstitch-xxofl/service/http/incoming_webhook/webhook0",
+        {}
+      )
+      .then((res: any) => {
+        console.log("Success", res);
+        this.setState({ disasters: res.data });
+      })
+      .catch((res: Error) => {
+        console.log("INVALID RESPONSE", res);
+      });
+  }
   render() {
     return (
       <div className="background">
@@ -29,7 +43,9 @@ class MainApp extends React.Component<any, any> {
         </Link>
         <Switch>
           <Route exact path="/" component={HomePage} />
-          <Route path="/labels" component={LabelPage} />
+          <Route path="/labels">
+            <LabelPage disastersDB={this.state.disasters} />
+          </Route>
           <Route path="/volunteer" component={VolunteerPage} />
           <Route path="/organization" component={OrganizationPage} />
         </Switch>

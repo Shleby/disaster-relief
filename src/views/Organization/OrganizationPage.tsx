@@ -2,7 +2,7 @@ import * as React from "react";
 
 import "./OrganizationPage.css";
 
-class MainApp extends React.Component<any, any> {
+class OrganizationPage extends React.Component<any, any> {
   render() {
     return (
       <div id="organization" className="cover">
@@ -14,4 +14,4 @@ class MainApp extends React.Component<any, any> {
   }
 }
 
-export default MainApp;
+export default OrganizationPage;
