@@ -17,7 +17,7 @@ class Category extends React.Component<any, any> {
         <div className="content">
           <h2>{this.props.name}</h2>
           <p>
-            Provide relief for the {this.props.name}. <u>See more</u>
+            Provide relief for the {this.props.name}.
             <ExpandMoreIcon className="arrowDown" />
           </p>
         </div>
