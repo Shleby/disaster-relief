@@ -4,4 +4,33 @@
 
 .summary {
   font-weight: lighter;
+  margin: 20px;
+  margin-top: -10px;
+}
+
+.cardTitle {
+  text-align: left;
+  color: black;
+  margin-left: 20px;
+}
+.cardInfo {
+  margin: 0;
+  margin-left: 20px;
+}
+
+.signUp {
+  height: 34px;
+  /* margin-top: 20px; */
+  background: #58ac71;
+  width: auto;
+  display: inline-block;
+  border-radius: 8px;
+  margin-left: calc(50% - 50px);
+  cursor: pointer;
+}
+.signUp p {
+  color: white;
+  margin: 0;
+  margin-top: 6px;
+  padding: 0 17px;
 }

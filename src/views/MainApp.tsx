@@ -43,7 +43,7 @@ class MainApp extends React.Component<any, any> {
       <div className="background">
         <Link to="/">
           <h1 className="title">cers</h1>
-          <p className="subtitle">Centralized Emergency Releif System</p>
+          <p className="subtitle">Centralized Emergency Relief System</p>
         </Link>
         <Switch>
           <Route exact path="/" component={HomePage} />

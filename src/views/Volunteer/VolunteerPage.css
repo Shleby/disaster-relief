@@ -1,21 +1,45 @@
 .volHead {
-  margin-left: 20%;
-  font-size: 60px;
-  font-weight: lighter;
+  margin-left: 200px;
+  color: white;
+  font-size: 40px;
   width: 100%;
   color: #fcfcfc;
   font-weight: normal;
-  font-family: "Ultra", sans-serif;
-  font-size: 65px;
-  text-transform: uppercase;
-  margin-top: -5px;
-  text-shadow: 0 2px white, 0 3px darkred;
+  margin-top: 20px;
+}
+.volSubtitle {
+  margin-left: 200px;
+  color: white;
+  font-size: 18px;
+  margin-top: -25px;
+  margin-bottom: 30px;
+}
+li {
+  color: black;
 }
 .cards {
+  position: relative;
   width: 500px;
-  border-style: outset;
+  padding-bottom: 20px;
+  border-radius: 8px;
   background-color: white;
   justify-content: left;
-  padding-bottom: 40px;
-  margin-bottom: 30px;
+  overflow: hidden;
+}
+.navbar {
+    background: white;
+    list-style: none;
+    float: right;
+    margin-top: -80px;
+    padding: 0;
+    border-radius: 8px;
+    margin-right: 70px;
+}
+.navbar li {
+    display: inline-block;
+    padding: 15px 25px;
+    cursor: pointer;
+}
+.vCover {
+  margin-bottom: 50px;
 }

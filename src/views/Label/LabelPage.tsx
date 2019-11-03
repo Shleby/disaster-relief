@@ -14,6 +14,9 @@ class LabelPage extends React.Component<any, any> {
       name: "",
       type: "",
       date: "",
+      person: "",
+      spots: "",
+      contact: "",
       location: ""
     };
   }
@@ -23,10 +26,10 @@ class LabelPage extends React.Component<any, any> {
         <div className="container">
           <h3>I want to help out as a(n)...</h3>
           <div className="items">
-            <Link to="/volunteer">
+            <Link to="/volunteer/meetups">
               <div className="vItem item">
                 <FavoriteBorderIcon className="icon" />
-                <h1>Volunteer</h1>
+                <h1>Samaritan</h1>
                 <p>
                   Help with on-site relief, distribute goods to victims in need,
                   and more.

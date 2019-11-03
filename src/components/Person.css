@@ -1,0 +1,15 @@
+#person img {
+    height: 100px;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+.pContent {
+    left: 140px;
+    top: 20px;
+    width: 300px;
+    position: absolute;
+}
+.pContent p {
+    margin: 0;
+}
