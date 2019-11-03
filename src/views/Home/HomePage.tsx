@@ -12,7 +12,7 @@ class MainApp extends React.Component<any, any> {
         {disasters.map(function(i: any) {
           return(
             <div>
-              <Category name={i.name}/>
+              <Category name={i.name} description={i.description} img={i.img}/>
             </div>
           );
         })}

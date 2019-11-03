@@ -1,8 +1,12 @@
 [
   {
-    "name": "Earthquakes"
+    "name": "Earthquakes",
+    "description": "Earthquakes are caused from faults disturbing the ground.",
+    "img": "earthquake.png"
   },
   {
-    "name": "Tornados"
+    "name": "Tornados",
+    "description": "Tornados are common in the South caused by strong winds.",
+    "img": "tornado.png"
   }
 ]

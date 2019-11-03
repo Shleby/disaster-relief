@@ -3,17 +3,36 @@
     margin: 25px;
     background: rgb(203, 223, 211);
     position: relative;
+    border-radius: 10px;
 }
 #category .content h2 {
-    float: left;
-    margin-left: 100px;
-    margin-top: 10px;
+    position: absolute;
+    text-align: left;
+    left: 100px;
+    top: 10px;
+    margin: 10px;
+}
+#category .content p {
+    position: absolute;
+    text-align: left;
+    left: 100px;
+    top: 40px;
+    margin: 10px;
+    margin-right: 45px;
 }
 #category .image {
     position: absolute;
     height: 80px;
     top: 10px;
     left: 10px;
-    background: grey;
     width: 80px;
+}
+#category .image img {
+    height: 80px;
+    width: 80px;
+}
+#category .icon {
+    position: absolute;
+    right: 15px;
+    top: 35px;
 }
