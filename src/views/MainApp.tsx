@@ -1,20 +1,28 @@
 import * as React from "react";
 
 import "./MainApp.css";
-import { BrowserRouter as Router } from "react-router-dom";
+import { Switch, Route } from 'react-router-dom';
 import HomePage from "./Home/HomePage";
 import LabelPage from "./Label/LabelPage";
+import OrganizationPage from "./Organization/OrganizationPage";
+import VolunteerPage from "./Volunteer/VolunteerPage";
+import { Link } from 'react-router-dom';
 
 class MainApp extends React.Component<any, any> {
   render() {
     return (
-      <Router>
         <div className="background">
-          <h1 className="title">cers</h1>
-          <p className="subtitle">Centralized Emergency Releif System</p>
-          <LabelPage />
+          <Link to="/">
+            <h1 className="title">cers</h1>
+            <p className="subtitle">Centralized Emergency Releif System</p>
+          </Link>
+          <Switch>
+            <Route exact path='/' component={HomePage}/>
+            <Route path='/labels' component={LabelPage}/>
+            <Route path='/volunteer' component={VolunteerPage}/>
+            <Route path='/organization' component={OrganizationPage}/>
+          </Switch>
         </div>
-      </Router>
     );
   }
 }
