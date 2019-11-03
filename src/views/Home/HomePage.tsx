@@ -21,12 +21,8 @@ class MainApp extends React.Component<any, any> {
   componentDidMount() {
     axios
       .get(
-        "https://webhooks.mongodb-stitch.com/api/client/v2.0/app/cersstitch-xxofl/service/getService/incoming_webhook/webhook0",
-        {
-          headers: {
-            "Content-Type": "application/json"
-          }
-        }
+        "https://webhooks.mongodb-stitch.com/api/client/v2.0/app/cersstitch-xxofl/service/http/incoming_webhook/webhook0",
+        {}
       )
       .then((res: any) => {
         console.log("Success", res);
@@ -43,6 +39,15 @@ class MainApp extends React.Component<any, any> {
       <div className="cover">
         <div className="container">
           <p className="containerTitle">Provide disaster relief for...</p>
+          {disasters.map(function(i: any) {
+            return (
+              <div>
+                <Link to="/labels">
+                  <Category name={i.name} type={i.type} />
+                </Link>
+              </div>
+            );
+          })}
         </div>
       </div>
     );
