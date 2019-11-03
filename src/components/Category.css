@@ -1,19 +1,44 @@
 #category.cover {
-  height: 100px;
+  height: 90px;
   margin: 25px;
-  background: rgb(203, 223, 211);
+  background: white;
+  color: black;
   position: relative;
+  border-radius: 10px;
+  cursor: pointer;
 }
 #category .content h2 {
-  float: left;
-  margin-left: 100px;
-  margin-top: 10px;
+  position: absolute;
+  text-align: left;
+  left: 90px;
+  top: 0px;
+}
+#category .content p {
+  font-size: 0.7em;
+  position: absolute;
+  text-align: left;
+  left: 90px;
+  top: 40px;
+  margin-right: 45px;
 }
 #category .image {
   position: absolute;
-  height: 80px;
-  top: 10px;
-  left: 10px;
-  background: grey;
-  width: 80px;
+  top: 20px;
+  left: 20px;
+}
+#category .image img {
+  height: 50px;
+  width: 50px;
+}
+#category .arrowRight {
+  position: absolute;
+  right: 15px;
+  top: 33px;
+  transform: scale(0.5);
+}
+#category .arrowDown {
+  position: absolute;
+  bottom: -5px;
+  margin-left: -2px;
+  transform: scaleX(0.8);
 }
