@@ -2,7 +2,6 @@ import * as React from "react";
 import axios from "axios";
 
 import "./HomePage.css";
-import disasters from "../../disasters.json";
 import Category from "../../components/Category";
 import { Link } from "react-router-dom";
 
@@ -27,7 +26,6 @@ class MainApp extends React.Component<any, any> {
       .then((res: any) => {
         console.log("Success", res);
         this.setState({ disasters: res.data });
-        console.log(this.state.disasters);
       })
       .catch((res: Error) => {
         console.log("INVALID RESPONSE", res);
@@ -39,7 +37,7 @@ class MainApp extends React.Component<any, any> {
       <div className="cover">
         <div className="container">
           <p className="containerTitle">Provide disaster relief for...</p>
-          {disasters.map(function(i: any) {
+          {this.state.disasters.map(function(i: any) {
             return (
               <div>
                 <Link to="/labels">
