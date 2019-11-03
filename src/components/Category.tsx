@@ -15,14 +15,7 @@ class Category extends React.Component<any, any> {
         </div>
         <div className="content">
           <h2>{this.props.childName}</h2>
-          <p>
-<<<<<<< HEAD
-            Provide relief for the {this.props.childName}. <u>See more</u>
-            <ExpandMoreIcon className="arrowDown" />
-=======
-            Provide relief for the {this.props.name}.
->>>>>>> fc55c31bc215f00db869580e4ba9caa9307753e0
-          </p>
+          <p>Provide relief for the {this.props.name}.</p>
         </div>
         <ArrowForwardIosIcon className="arrowRight" />
       </div>

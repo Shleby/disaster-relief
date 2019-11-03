@@ -1,21 +1,33 @@
 {
   "files": {
-    "main.css": "/static/css/main.fb477a5b.chunk.css",
-    "main.js": "/static/js/main.9c879845.chunk.js",
-    "main.js.map": "/static/js/main.9c879845.chunk.js.map",
+    "main.css": "/static/css/main.5923fd4c.chunk.css",
+    "main.js": "/static/js/main.fec88918.chunk.js",
+    "main.js.map": "/static/js/main.fec88918.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.29573a70.js",
     "runtime-main.js.map": "/static/js/runtime-main.29573a70.js.map",
-    "static/js/2.9ca6f627.chunk.js": "/static/js/2.9ca6f627.chunk.js",
-    "static/js/2.9ca6f627.chunk.js.map": "/static/js/2.9ca6f627.chunk.js.map",
+    "static/js/2.7efa621f.chunk.js": "/static/js/2.7efa621f.chunk.js",
+    "static/js/2.7efa621f.chunk.js.map": "/static/js/2.7efa621f.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.45c9992b635eb8ea271a747f56f8f302.js": "/precache-manifest.45c9992b635eb8ea271a747f56f8f302.js",
+    "precache-manifest.e603c49a4541c44cbd8fd7b999d06e81.js": "/precache-manifest.e603c49a4541c44cbd8fd7b999d06e81.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.fb477a5b.chunk.css.map": "/static/css/main.fb477a5b.chunk.css.map"
+    "static/css/main.5923fd4c.chunk.css.map": "/static/css/main.5923fd4c.chunk.css.map",
+    "static/media/MainApp.css": "/static/media/AvenirLTStd-Black.b1abb878.otf",
+    "static/media/SignIn.css": "/static/media/background.51a01659.jpg",
+    "static/media/earthquake.png": "/static/media/earthquake.de60da0d.png",
+    "static/media/female.png": "/static/media/female.c10a1a22.png",
+    "static/media/fire.png": "/static/media/fire.5d1a183f.png",
+    "static/media/flood.png": "/static/media/flood.051cd2ca.png",
+    "static/media/hurricane.png": "/static/media/hurricane.a9a27169.png",
+    "static/media/landslide.png": "/static/media/landslide.8453245a.png",
+    "static/media/male.png": "/static/media/male.e79a5a4e.png",
+    "static/media/tornado.png": "/static/media/tornado.5bcf6aa3.png",
+    "static/media/typhoon.png": "/static/media/typhoon.029299c2.png",
+    "static/media/wild-fire.png": "/static/media/wild-fire.1b592c9b.png"
   },
   "entrypoints": [
     "static/js/runtime-main.29573a70.js",
-    "static/js/2.9ca6f627.chunk.js",
-    "static/css/main.fb477a5b.chunk.css",
-    "static/js/main.9c879845.chunk.js"
+    "static/js/2.7efa621f.chunk.js",
+    "static/css/main.5923fd4c.chunk.css",
+    "static/js/main.fec88918.chunk.js"
   ]
 }
