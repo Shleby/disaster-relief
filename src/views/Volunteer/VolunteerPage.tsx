@@ -2,6 +2,7 @@ import * as React from "react";
 import "./VolunteerPage.css";
 import axios from "axios";
 import Cards from "../../components/Cards";
+
 class VolunteerPage extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
@@ -33,8 +34,14 @@ class VolunteerPage extends React.Component<any, any> {
 
     return (
       <div>
+        <ul className="navbar">
+            <li>Meetups</li>
+            <li>Missing Persons</li>
+            <li>Donate</li>
+        </ul>
         <div className="container">
-          <h1 className="volHead">California Fires</h1>
+          <h1 className="volHead"><strong>California Wildfires</strong></h1>
+          <p className="volSubtitle">Volunteer with an organization or relief center.</p>
           <div
             style={{
               display: "grid",

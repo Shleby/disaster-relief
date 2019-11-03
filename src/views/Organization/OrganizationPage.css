@@ -1,0 +1,18 @@
+.cover {
+    color: white;
+}
+.navbar {
+    background: white;
+    color: black;
+    list-style: none;
+    float: right;
+    margin-top: -80px;
+    padding: 0;
+    border-radius: 8px;
+    margin-right: 70px;
+}
+.navbar li {
+    display: inline-block;
+    padding: 15px 25px;
+    cursor: pointer;
+}
