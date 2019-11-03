@@ -1,6 +1,8 @@
-# disaster-relief
+# Disaster-Relief aka CERS == Centeralized Emergency Relief System
 
 HackTX 2019
+
+Cers is designed to help those affected by disaster. This app brings first responders and those who are affiliated with people involved in disasters together. We recognize that when you are in a disaster its easy to not be accounted for, so this gives a system that allows loved ones to reach out to first responders and put out missing person's requests as well as help get invovled with orginizations working to help support those who are affected.
 
 ## To run
 
@@ -11,7 +13,10 @@ HackTX 2019
 
 ## Contributors
 
-Amy Le
-Anne Luthfiya
-Sam Fletcher
-Shelby Huffman
+- Sam Fletcher
+
+- Shelby Huffman
+
+- Amy Le
+
+- Anne Luthfiya
