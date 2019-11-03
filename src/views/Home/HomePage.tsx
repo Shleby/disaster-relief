@@ -3,7 +3,9 @@ import axios from "axios";
 
 import "./HomePage.css";
 import Category from "../../components/Category";
-import { Link } from "react-router-dom";
+import { Link, Route } from "react-router-dom";
+import VolunteerPage from "../Volunteer/VolunteerPage";
+import { Button } from "@material-ui/core";
 
 class HomePage extends React.Component<any, any> {
   constructor(props: any) {
@@ -13,7 +15,8 @@ class HomePage extends React.Component<any, any> {
       name: "",
       type: "",
       date: "",
-      location: ""
+      location: "",
+      selectedName: ""
     };
   }
   componentDidMount() {
@@ -40,7 +43,7 @@ class HomePage extends React.Component<any, any> {
             return (
               <div>
                 <Link to="/labels">
-                  <Category name={i.name} type={i.type} />
+                  <Category childName={i.name} type={i.type} />
                 </Link>
               </div>
             );

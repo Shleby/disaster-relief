@@ -16,7 +16,8 @@ class MainApp extends React.Component<any, any> {
       name: "",
       type: "",
       date: "",
-      location: ""
+      location: "",
+      childName: ""
     };
   }
 
@@ -34,6 +35,9 @@ class MainApp extends React.Component<any, any> {
         console.log("INVALID RESPONSE", res);
       });
   }
+  callbackFunction = (childData: any) => {
+    this.setState({ childName: childData });
+  };
   render() {
     return (
       <div className="background">
